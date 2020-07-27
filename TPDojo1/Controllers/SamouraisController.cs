@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using BO;
 using TPDojo1.Data;
+using TPDojo1.Models;
 
 namespace TPDojo1.Controllers
 {
@@ -39,7 +40,10 @@ namespace TPDojo1.Controllers
         // GET: Samourais/Create
         public ActionResult Create()
         {
-            return View();
+
+            var vm = new SamouraiVM();
+            vm.Armes = db.Armes.ToList();
+            return View(vm);
         }
 
         // POST: Samourais/Create
