@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPDojo1", "TPDojo1\TPDojo1.csproj", "{0B7B519C-2E52-4792-9A1E-ECBDCB421DFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BO", "TPDojoBO\BO.csproj", "{0BBA0441-0AB7-4112-946B-521C9CEC7367}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B7B519C-2E52-4792-9A1E-ECBDCB421DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B7B519C-2E52-4792-9A1E-ECBDCB421DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B7B519C-2E52-4792-9A1E-ECBDCB421DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B7B519C-2E52-4792-9A1E-ECBDCB421DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BBA0441-0AB7-4112-946B-521C9CEC7367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BBA0441-0AB7-4112-946B-521C9CEC7367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BBA0441-0AB7-4112-946B-521C9CEC7367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BBA0441-0AB7-4112-946B-521C9CEC7367}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD52D466-87D1-43B3-94B6-CC419E68D4F3}
+	EndGlobalSection
+EndGlobal
