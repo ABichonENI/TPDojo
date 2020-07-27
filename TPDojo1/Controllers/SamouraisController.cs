@@ -95,12 +95,12 @@ namespace TPDojo1.Controllers
             if (ModelState.IsValid)
             {
                 var samourai = db.Samourais.Find(samouraiVM.Samourai.Id);
-                samouraiVM.Samourai.Force = samourai.Force;
-                samouraiVM.Samourai.Nom = samourai.Nom;
-                samouraiVM.Samourai.Id = samourai.Id;
-                samouraiVM.Samourai.Arme = samourai.Arme;
+                samourai.Force = samouraiVM.Samourai.Force ;
+                samourai.Nom = samouraiVM.Samourai.Nom ;
+                
+                samourai.Arme = db.Armes.FirstOrDefault(a => a.Id == samouraiVM.IdArmeSamourai);
 
-                db.Entry(samouraiVM.Samourai).State = EntityState.Modified;
+                db.Entry(samourai).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
