@@ -12,7 +12,9 @@ namespace TPDojo1.Models
 
         public List<Arme> Armes { get; set; }
         
-        public int IdArmeSamourai { get; set; }
+        public int? IdArmeSamourai { get; set; }
+
+        public List<ArtMartial> ArtMartials { get; set; }
 
     }
 }

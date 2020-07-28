@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
+using BO;
+using TPDojo1.Models;
 
 namespace TPDojo1.Data
 {
@@ -17,10 +19,21 @@ namespace TPDojo1.Data
     
         public TPDojo1Context() : base("name=TPDojo1Context")
         {
-        }
+         }  
+        
+        
+    
 
         public System.Data.Entity.DbSet<BO.Samourai> Samourais { get; set; }
 
         public System.Data.Entity.DbSet<BO.Arme> Armes { get; set; }
+        
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Samourai>().HasOptional(a=> a.Arme);
+            modelBuilder.Entity<Samourai>().HasMany(m => m.ArtMartials).WithMany();
+           ;
+
+        }
     }
 }

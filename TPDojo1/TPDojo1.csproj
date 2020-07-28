@@ -137,6 +137,14 @@
     <Compile Include="Migrations\202007271211033_TPDOJO.Designer.cs">
       <DependentUpon>202007271211033_TPDOJO.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007281443327_ArtMartial.cs" />
+    <Compile Include="Migrations\202007281443327_ArtMartial.Designer.cs">
+      <DependentUpon>202007281443327_ArtMartial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007281530313_relations.cs" />
+    <Compile Include="Migrations\202007281530313_relations.Designer.cs">
+      <DependentUpon>202007281530313_relations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SamouraiVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -213,6 +221,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202007271211033_TPDOJO.resx">
       <DependentUpon>202007271211033_TPDOJO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007281443327_ArtMartial.resx">
+      <DependentUpon>202007281443327_ArtMartial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007281530313_relations.resx">
+      <DependentUpon>202007281530313_relations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
