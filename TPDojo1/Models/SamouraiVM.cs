@@ -16,5 +16,7 @@ namespace TPDojo1.Models
 
         public List<ArtMartial> ArtMartials { get; set; }
 
+        public List<int> IdArtmartials { get; set; }
+
     }
 }

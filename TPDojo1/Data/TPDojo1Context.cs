@@ -20,20 +20,22 @@ namespace TPDojo1.Data
         public TPDojo1Context() : base("name=TPDojo1Context")
         {
          }  
-        
-        
-    
+           
 
         public System.Data.Entity.DbSet<BO.Samourai> Samourais { get; set; }
 
         public System.Data.Entity.DbSet<BO.Arme> Armes { get; set; }
         
+        public System.Data.Entity.DbSet<BO.ArtMartial> ArtMartials { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Samourai>().HasOptional(a=> a.Arme);
             modelBuilder.Entity<Samourai>().HasMany(m => m.ArtMartials).WithMany();
-           ;
+           
 
         }
+
+       
     }
 }

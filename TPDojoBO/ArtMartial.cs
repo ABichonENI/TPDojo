@@ -8,11 +8,10 @@ namespace BO
 {
     public class ArtMartial : DbItem
     {
-        public int Id { get; set; }
-
+        private int id;
         public string Nom { get; set; }
 
-        int DbItem.Id { get => this.Id; set => this.Id = value; }
+        public int Id { get => this.id; set => this.id = value; }
 
     }
 }

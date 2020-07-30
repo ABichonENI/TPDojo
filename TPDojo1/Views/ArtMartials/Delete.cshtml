@@ -1,4 +1,4 @@
-﻿@model BO.Arme
+﻿@model BO.ArtMartial
 
 @{
     ViewBag.Title = "Delete";
@@ -6,19 +6,9 @@
 
 <h2>Delete</h2>
 
-@if (ViewData.ModelState.Values.Select(e => e.Errors).Count() > 0)
-    {
-    @Html.ValidationSummary(true,"", new { @class = "text-danger"})
-        <div class="form-actions no-color">
-            @Html.ActionLink("Retour à la liste","Index")
-        </div>
-    }
-else
-{
-
 <h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>Arme</h4>
+    <h4>ArtMartial</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -27,14 +17,6 @@ else
 
         <dd>
             @Html.DisplayFor(model => model.Nom)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Degats)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Degats)
         </dd>
 
     </dl>
@@ -47,6 +29,4 @@ else
             @Html.ActionLink("Back to List", "Index")
         </div>
     }
-    
 </div>
-}
